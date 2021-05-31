@@ -1,11 +1,11 @@
 [Unit]
-Description=tomcat 8
+Description=tomcat 9
 After=network.target syslog.target
 
 [Service]
 Type=forking
-User=Ted
-Group=Ted
+User=root
+Group=root
 ExecStart=/tomcat/bin/startup.sh start
 ExecStop=/tomcat/bin/shutdown.sh stop
 
